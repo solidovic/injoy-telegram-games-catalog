@@ -1,0 +1,73 @@
+* {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: #000000;
+}
+
+body {
+  padding: 20px 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.apps {
+  margin: 0 auto;
+  width: 390px;
+}
+
+@media screen and (max-width: 390px) {
+  .apps {
+    width: 100%;
+  }
+}
+
+.apps__item {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.apps__item + .apps__item {
+  margin-top: 15px;
+}
+
+.apps__item__logo {
+  border-radius: 10px;
+  width: 64px;
+}
+
+.apps__item__info {
+  flex: 1;
+}
+
+.apps__item__info__name {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.apps__item__info__description {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.apps__item__button {
+  border-radius: 60px;
+  padding: 10px 20px;
+  background: #20A3F6;
+
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.apps__item__button:hover, .apps__item__button:active {
+  background: #117CBF;
+}

@@ -1,0 +1,29 @@
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+.pnp.*
+
+# env
+.env
+
+# dependencies
+/node_modules
+tsconfig.tsbuildinfo
+
+# build
+/dist/
+/build/
+
+# ide
+.vscode
+.idea
+.DS_Store
+
+# yarn
+/yarn-error.log
+/style/main.css
+/style/main.css.map

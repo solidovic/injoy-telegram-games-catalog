@@ -1,0 +1,8 @@
+{
+  "name": "injoy-telegram-games-catalog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/solidovic/injoy-telegram-games-catalog",
+  "author": "Anton Shalimov <a.shalimof@yandex.ru>",
+  "license": "MIT"
+}

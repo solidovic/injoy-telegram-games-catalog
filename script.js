@@ -123,7 +123,7 @@ function getLanguage() {
   try {
     if ('Telegram' in window) {
       const language = window.Telegram.WebApp.initDataUnsafe.user.language_code;
-      return language === RU ? RU : EN;
+      return language.toUpperCase() === RU ? RU : EN;
     } else {
       return EN;
     }
@@ -197,7 +197,6 @@ function expandMiniApp() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Expand Mini App
   expandMiniApp();
   setInterval(() => expandMiniApp(), 1000);
 

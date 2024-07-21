@@ -133,11 +133,13 @@ function getLanguage() {
 }
 
 function injectAppCards() {
+  console.log('injectAppCards');
   appCardsDomElem.textContent = '';
 
   const language = getLanguage();
 
   for (const app of appCards) {
+    console.log('injectAppCards app:', app);
     // Create the main app item div
     const appItem = document.createElement('div');
     appItem.classList.add('apps__item');
@@ -178,11 +180,13 @@ function injectAppCards() {
     appItem.appendChild(appButton);
 
     // Append the main app item div to the app cards container
+    console.log('injectAppCards appCardsDomElem.appendChild(appItem)');
     appCardsDomElem.appendChild(appItem);
   }
 }
 
 function expandMiniApp() {
+  console.log('expandMiniApp');
   try {
     if (!window.Telegram.WebApp.isExpanded) {
       window.Telegram.WebApp.expand();

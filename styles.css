@@ -10,6 +10,7 @@ html, body {
 
 body {
   padding: 20px 10px;
+  box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: scroll;
 }

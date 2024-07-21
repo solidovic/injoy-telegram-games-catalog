@@ -17,10 +17,10 @@ body {
 
 .apps {
   margin: 0 auto;
-  width: 390px;
+  width: 600px;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 600px) {
   .apps {
     width: 100%;
   }

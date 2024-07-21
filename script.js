@@ -193,7 +193,7 @@ function expandMiniApp() {
       window.Telegram.WebApp.HapticFeedback.impactOccurred('heavy');
 
       // Part of fix scroll top
-      window.scrollTo(0, 10);
+      window.scrollTo(0, 0);
     }
   } catch {
     /* noop */
